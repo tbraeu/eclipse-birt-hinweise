@@ -37,3 +37,13 @@ Obwohl die x-Achse ausdrücklich auf LINEAR_LITERAL gesetzt wurde, wurde sie wei
 ```java
 xAchse.setCategoryAxis(false);
 ```
+
+### Einfärbung von Linien
+
+Für die explizite Festlegung der Linienfarbe muß an der zugehörigen LineSeries die Verwendung der Palette ausgeschaltet werden, ansonsten werden die Farben aus der Palette verwendet.
+
+```java
+final LineSeries ls = (LineSeries) LineSeriesImpl.create();
+ls.setPaletteLineColor(false);
+ls.getLineAttributes().setColor(ColorDefinitionImpl.create(255, 0, 0));
+```
