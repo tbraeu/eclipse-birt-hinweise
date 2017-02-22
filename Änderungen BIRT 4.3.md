@@ -47,3 +47,5 @@ final LineSeries ls = (LineSeries) LineSeriesImpl.create();
 ls.setPaletteLineColor(false);
 ls.getLineAttributes().setColor(ColorDefinitionImpl.create(255, 0, 0));
 ```
+
+Das ist eine Teständerung.
